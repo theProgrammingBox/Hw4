@@ -100,10 +100,12 @@ istream& operator>>(istream &is, Date &date)
 {
 	cout << "Enter a month: ";
 	is >> date.month;
+	is.ignore(1000, '\n');
 	cout << "Enter a day: ";
 	is >> date.day;
+	is.ignore(1000, '\n');
 	cout << "Enter a year: ";
 	is >> date.year;
-	is.ignore();
+	is.ignore(1000, '\n');
 	return is;
 }

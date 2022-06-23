@@ -160,13 +160,15 @@ istream &operator>>(istream &is, Employee &employee)
 
 	cout << "Enter an employee id: ";
 	is   >> employee.id;
+	is.ignore(1000, '\n');
 
 	cout << "Enter an employee phone number: ";
 	is   >> employee.phone;
+	is.ignore(1000, '\n');
 
 	cout << "Enter an employee age: "; 
 	is   >> employee.age;
-	is.ignore();
+	is.ignore(1000, '\n');
 	
 	cout << "Enter an employee gender: ";
 	getline(is, employee.gen);
@@ -176,10 +178,11 @@ istream &operator>>(istream &is, Employee &employee)
 
 	cout << "Enter the employee's salary: ";
 	is   >> employee.salary;
+	is.ignore(1000, '\n');
 
 	cout << "Enter a date: ";
 	is   >> employee.hireDate;
-	is.ignore();
+	is.ignore(1000, '\n');
 
 	return is;
 }
