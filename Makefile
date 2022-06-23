@@ -24,10 +24,10 @@ Date.o: Date.h Date.cpp Header.h
 	$(CC) $(FLAGS) -c Date.cpp
 
 tar:
-	tar -cf Hw3.tar Hw3.scr Makefile $(FILES)
+	tar -cf Hw4.tar Hw4.scr Makefile $(FILES)
 
 clean:
-	rm *.o *.tar *.scr Hw3
+	rm *.o *.tar *.scr Hw4
 
 sudoClean:
-	rm *.o *.scr Hw3
+	rm *.o *.scr Hw4
