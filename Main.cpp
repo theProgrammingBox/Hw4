@@ -84,9 +84,12 @@ int main()
 
 	cout << "Test pre/post increment operations: " << endl;
 	cout << "employee5: " << employee5 << endl;
-	cout << "employee5++: " << employee5++ << "\n\n";
+	employee5++ + 2;
+	cout << "employee5++ + 2: " << employee5 << endl;
+	employee5.SetAge(0);
 	cout << "employee5: " << employee5 << endl;
-	cout << "++employee5: " << ++employee5 << endl;
+	++employee5 + 2;
+	cout << "++employee5 + 2: " << ++employee5 << endl;
 
 	return 0;
 }
