@@ -61,6 +61,10 @@ int main()
 	employee4.SetAge(30);
 	employee4 + 2;
 
+	Employee employee5;
+	cin >> employee5;
+	cout << employee5;
+
 	return 0;
 
 	// Employee employee2;
