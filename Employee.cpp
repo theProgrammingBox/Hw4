@@ -179,6 +179,7 @@ istream &operator>>(istream &is, Employee &employee)
 
 	cout << "Enter a date: ";
 	is   >> employee.hireDate;
+	is.ignore();
 
 	return is;
 }

@@ -104,5 +104,6 @@ istream& operator>>(istream &is, Date &date)
 	is >> date.day;
 	cout << "Enter a year: ";
 	is >> date.year;
+	is.ignore();
 	return is;
 }
