@@ -61,6 +61,7 @@ int main()
 	programmer1.SetPhone(1111111111);
 	cout << "Compare 2: ";
 	IsPhoneNumberEqual(employee1, programmer1);
+	cout << endl;
 
 	Employee employee2;
 	employee2.SetPhone(9495551234);
@@ -69,27 +70,33 @@ int main()
 	employee2.SetPhone(1111111111);
 	cout << "Compare 4: ";
 	employee1 == employee2;
+	cout << endl;
 
 	Employee employee3;
 	employee3.SetAge(30);
 	employee3.AddToAge(2);
+	cout << endl;
 
 	Employee employee4;
 	employee4.SetAge(30);
 	employee4 + 2;
+	cout << endl;
 
 	Employee employee5;
 	cin >> employee5;
-	cout << employee5 << endl;
+	cout << employee5 << "\n\n";
 
 	cout << "Test pre/post increment operations: " << endl;
-	cout << "employee5: " << employee5 << endl;
-	employee5++ + 2;
-	cout << "employee5++ + 2: " << employee5 << endl;
 	employee5.SetAge(0);
-	cout << "employee5: " << employee5 << endl;
-	++employee5 + 2;
-	cout << "++employee5 + 2: " << ++employee5 << endl;
+	cout << "\nemployee5:\n" << employee5 << endl;
+	cout << "\nemployee5++:\n" << employee5++ << "\n\n";
+	cout << "\nafter employee5++:\n" << employee5 << endl;
+	employee5.SetAge(0);
+	cout << "\nemployee5:\n" << employee5 << endl;
+	cout << "\n++employee5:\n" << ++employee5 << endl;
+	cout << "\nafter ++employee5:\n" << employee5 << endl;
+
+	//
 
 	return 0;
 }
