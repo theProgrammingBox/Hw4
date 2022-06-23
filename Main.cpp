@@ -63,7 +63,7 @@ int main()
 
 	Employee employee5;
 	cin >> employee5;
-	cout << employee5;
+	cout << employee5 << endl;
 
 	return 0;
 
