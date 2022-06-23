@@ -1,11 +1,15 @@
 #include "Date.h"
 
 /*************************************************************************
- * MonthToString
- *************************************************************************
+ * Method MonthToString: Class Date
+ *------------------------------------------------------------------------
  * This function will convert the month to a string.
+ *------------------------------------------------------------------------
+ * PRE-CONDITIONS
+ * 		none
  *
- * Returns: string
+ * POST-CONDITIONS
+ * 		returns a string of the month.
  *************************************************************************/
 
 string Date::MonthToString() const
@@ -42,11 +46,15 @@ string Date::MonthToString() const
 }
 
 /*************************************************************************
- * DayToString
- *************************************************************************
+ * Method DayToString: Class Date
+ * ----------------------------------------------------------------------
  * This function will convert the day to a string.
+ * ----------------------------------------------------------------------
+ * PRE-CONDITIONS
+ * 		none
  *
- * Returns: string
+ * POST-CONDITIONS
+ * 		returns a string of the day.
  *************************************************************************/
 
 string Date::DayToString() const
@@ -59,11 +67,15 @@ string Date::DayToString() const
 }
 
 /*************************************************************************
- * YearToString
- *************************************************************************
+ * Method YearToString: Class Date
+ * ----------------------------------------------------------------------
  * This function will convert the year to a string.
+ * ----------------------------------------------------------------------
+ * PRE-CONDITIONS
+ * 		none
  *
- * Returns: string
+ * POST-CONDITIONS
+ * 		returns a string of the year.
  *************************************************************************/
 
 string Date::YearToString() const
@@ -76,16 +88,15 @@ string Date::YearToString() const
 }
 
 /*************************************************************************
- * << operator
- *************************************************************************
- * This function overloads the << operator to print the date.
- * ______________________________________________________________________
- * PRE-CONDITIONS :
- * 	A date object (month, day, & year)
- * 
- * POST-CONDITIONS :
- * 	
- * Returns: ostream
+ * Method operator <<: Class Date
+ * ----------------------------------------------------------------------
+ * This function will output the date to the console.
+ * ----------------------------------------------------------------------
+ * PRE-CONDITIONS
+ * 		An ostream object and a Date object
+ *
+ * POST-CONDITIONS
+ * 		returns an ostream object that contains the formatted date.
  *************************************************************************/
 
 ostream &operator<<(ostream &os, const Date &date)
@@ -95,6 +106,18 @@ ostream &operator<<(ostream &os, const Date &date)
 	   << date.YearToString();
 	return os;
 }
+
+/*************************************************************************
+ * Method operator >>: Class Date
+ * ----------------------------------------------------------------------
+ * This function will input the date from the console.
+ * ----------------------------------------------------------------------
+ * PRE-CONDITIONS
+ * 		An istream object and a Date object
+ *
+ * POST-CONDITIONS
+ * 		returns an istream object that contains the formatted date.
+ *************************************************************************/
 
 istream& operator>>(istream &is, Date &date)
 {
