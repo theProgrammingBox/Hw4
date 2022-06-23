@@ -155,18 +155,6 @@ ostream &operator<<(ostream &os, const Employee &employee)
 
 istream &operator>>(istream &is, Employee &employee)
 {
-	
-	// string name;
-	// int id;
-	// long unsigned int phone;
-	// int age;
-	// string gen;
-	// string job;
-	// long unsigned int salary;
-	// Date hireDate;
-
-	//cin >> employee
-
 	cout << "Enter an employee name: ";
 	getline(is, employee.name);
 

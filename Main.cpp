@@ -39,19 +39,34 @@ int main()
 	employee2.SetPhone(1111111111);
 	cout << "Compare 4: ";
 	employee1 == employee2;
+	/*
+	3.  Write an addition member function that adds an integer to a
+	CS1Cemployee’s age (make sure the integer is a passed
+	parameter).  The output should state how many years were
+	added to the age.
+
+	4.  Overload the addition operator to add a constant to a
+	CS1Cemployee’s age. For example: StarC1SCEmployee =
+	StarC1SCEmployee + 2.  The output should state how many
+	years were added to the age.
+
+	5.  Overload << and >> operators to read in a CS1Cemployee object
+	(e.g. cin >> myEmployee and cout << myEmployee) */
 
 	Employee employee3;
+	employee3.SetAge(30);
+	employee3.addToAge(2);
+
+	Employee employee4;
+	employee4.SetAge(30);
+	employee4 + 2;
+
 	return 0;
-
-
-
 
 	// Employee employee2;
 
 	// cout << employee1 == employee2;
-	
-	
-	
+
 	// cout << "Employee 1 Before:\n"
 	// 	 << employee1 << "\n\n";
 	// employee1.SetName("Jimmy Fallon");
