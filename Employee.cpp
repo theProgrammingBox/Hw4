@@ -203,25 +203,25 @@ istream &operator>>(istream &is, Employee &employee)
 	getline(is, employee.name);
 
 	cout << "Enter an employee id: ";
-	is   >> employee.id;
+	is >> employee.id;
 
 	cout << "Enter an employee phone number: ";
-	is   >> employee.phone;
+	is >> employee.phone;
 
-	cout << "Enter an employee age: "; 
-	is   >> employee.age;
+	cout << "Enter an employee age: ";
+	is >> employee.age;
 	is.ignore(1000, '\n');
-	
+
 	cout << "Enter an employee gender: ";
 	getline(is, employee.gen);
 
 	cout << "Enter an employee job title: ";
-	getline(is,  employee.job);
+	getline(is, employee.job);
 
 	cout << "Enter the employee's salary: ";
-	is   >> employee.salary;
+	is >> employee.salary;
 
-	is   >> employee.hireDate;
+	is >> employee.hireDate;
 
 	return is;
 }
@@ -238,7 +238,7 @@ istream &operator>>(istream &is, Employee &employee)
  * 		returns a bool that is true if the two employees are equal.
  *************************************************************************/
 
-bool Employee::operator==(const Employee& employee) const
+bool Employee::operator==(const Employee &employee) const
 {
 	if (this->phone == employee.phone)
 	{
@@ -283,4 +283,41 @@ void Employee::operator+(int num)
 {
 	age += num;
 	cout << num << " years were added to age.\n";
+}
+
+/*************************************************************************
+ * Method operator ++: Class Employee
+ * ----------------------------------------------------------------------
+ * This function overloads the pre ++ operator to add a number to the age.
+ * ----------------------------------------------------------------------
+ * PRE-CONDITIONS
+ * 		none
+ *
+ * POST-CONDITIONS
+ * 		preincrements the age by 1.
+ *************************************************************************/
+
+Employee &Employee::operator++()
+{
+	age++;
+	return *this;
+}
+
+/*************************************************************************
+ * Method operator ++: Class Employee
+ * ----------------------------------------------------------------------
+ * This function overloads the post ++ operator to add a number to the age.
+ * ----------------------------------------------------------------------
+ * PRE-CONDITIONS
+ * 		none
+ *
+ * POST-CONDITIONS
+ * 		postincrements the age by 1.
+ *************************************************************************/
+
+Employee Employee::operator++(int)
+{
+	Employee temp = *this;
+	age++;
+	return temp;
 }

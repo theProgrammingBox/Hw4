@@ -29,7 +29,6 @@ private:
 	friend ostream &operator<<(ostream &os, const Employee &employee);
 
 public:
-
 	/*** CONSTRUCTOR & DESTRUCTOR ***/
 
 	Employee() : name(""), id(-1), phone(0), age(-1), gen(""), job(""), salary(0), hireDate(){};
@@ -49,9 +48,11 @@ public:
 	void SetHire(Date hireDate) { this->hireDate = hireDate; }
 	void AddToAge(int num);
 	void operator+(int num);
+	Employee &operator++();
+	Employee operator++(int);
 
 	/***  ACCESSORS ***/
 
 	friend bool IsPhoneNumberEqual(const Employee &employee, const Employee &employee2);
-	bool operator==(const Employee& employee) const;
+	bool operator==(const Employee &employee) const;
 };

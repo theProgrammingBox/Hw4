@@ -82,5 +82,11 @@ int main()
 	cin >> employee5;
 	cout << employee5 << endl;
 
+	cout << "Test pre/post increment operations: " << endl;
+	cout << "employee5: " << employee5 << endl;
+	cout << "employee5++: " << employee5++ << "\n\n";
+	cout << "employee5: " << employee5 << endl;
+	cout << "++employee5: " << ++employee5 << endl;
+
 	return 0;
 }
