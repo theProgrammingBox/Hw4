@@ -96,7 +96,12 @@ int main()
 	cout << "\n++employee5:\n" << ++employee5 << endl;
 	cout << "\nafter ++employee5:\n" << employee5 << endl;
 
-	//
-
 	return 0;
 }
+
+/*
+Which overloaded operator incurs the most overhead?
+
+Answer: The overloaded operator that incurs the most overhead is the
+overloaded operator ++ because it is the most complex.
+*/

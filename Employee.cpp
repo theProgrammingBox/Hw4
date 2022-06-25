@@ -312,7 +312,7 @@ Employee &Employee::operator++()
  * 		none
  *
  * POST-CONDITIONS
- * 		postincrements the age by 1.
+ * 		post increments the age by 1.
  *************************************************************************/
 
 Employee Employee::operator++(int)
